@@ -100,11 +100,16 @@ One more habit worth building: change one thing at a time, so you always know wh
 2. **Fix only the named cause.** A missing LICENSE means add the license file — it does not mean rebuilding your whole entry.
 3. **Commit and resubmit before the deadline**, with the new commit SHA. A rejected entry is not the end of the run while the competition is still open and retries are allowed.
 
-### Symptom: the entry was accepted but ranks far below where you expected
+### Symptom: the entry was accepted and scored, but it sits far below the paid places
 
-**Likely cause:** ranking is comparative — thousands of entries chase a few dozen paid places, and the top of the board is usually saturated with near-perfect scores.
+**Likely cause:** nothing is broken — ranking is comparative. Your score is measured against every other entry in the field, thousands of entries chase a few dozen paid places, and the top of the board is usually saturated with near-perfect scores. A low rank is a position in a race, not an error message.
 
-**Fix:** treat the standing entry as standing. Study what the current top entries do that yours does not, and spend your remaining time on bounties where the gap is actually closable, instead of resubmitting a weaker variant over a live one.
+**Fix:**
+
+1. **Measure the gap before you react.** Compare your entry's score against the score at the last paid place, not against rank 1 — the only distance that matters is the one to the paid line.
+2. **Study the current top entries** and name, concretely, what they do that yours does not. "They are better" is not a finding; "they show X and mine doesn't" is.
+3. **Let the standing entry stand.** Never resubmit a weaker or unproven variant over a live entry — under a last-entry-counts rule, the new one replaces it, and a guess can leave you worse off than the entry you already had.
+4. **Spend the remaining time where the gap is closable** — a bounty where your score sits just under the paid line is worth more effort than one where the top is out of reach.
 
 ## Stuck on transcripts and recordings
 
@@ -153,6 +158,21 @@ node cli/makefun.mjs status
 ```
 
 Run them from inside the unpacked competition kit, and re-check `status` after every submission until the entry shows as scored.
+
+## Before you submit: the 60-second checklist
+
+Sixty seconds now beats a rejection later. Every item below is something the server will check anyway — run through them while you can still fix what fails:
+
+- [ ] **The repo is public.** Open its URL in a private/incognito window; if you can't see it logged out, the checker can't either.
+- [ ] **The repo's owner is the GitHub account linked to your make.fun profile** — not just an account you have push access to.
+- [ ] **A LICENSE file sits at the repo root** (MIT is fine) — no license file, no entry.
+- [ ] **The README carries your own referral link** — your code, from your profile, not the one from whatever guide you read. (This guide's is `gcjdenbh`; yours is different, and that difference is the whole point.)
+- [ ] **screenshot.png is at the repo root**, next to the README — a screenshot of the guide as readers will see it.
+- [ ] **The commit you are about to name is pushed** and is the one on the branch — copy its full 40-character SHA, not the short version.
+- [ ] **You are signing with a wallet that belongs to this account** — that wallet is also where any prize lands, so check the address once more.
+- [ ] **The deadline has not passed.** Check the requirements page for the closing time in UTC and convert it to your timezone before you start celebrating.
+
+All eight ticked? Submit — and afterwards, check the entry's status until it shows as scored.
 
 ## FAQ
 
